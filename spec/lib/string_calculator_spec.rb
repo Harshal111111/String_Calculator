@@ -13,5 +13,9 @@ RSpec.describe StringCalculator do
     it "returns sum of two numbers separated by comma" do
       expect(StringCalculator.new.add("2,6")).to eq(8)
     end
+
+    it "return sum of multiple numbers separated by comma" do
+      expect(StringCalculator.new.add("2,3,4,1,5")).to eq(15)
+    end
   end
 end
